@@ -4,7 +4,7 @@ import Sidebar from "./components/Sidebar";
 import CustomerDetailForm from "./pages/CustomerDetailForm";
 import Endpage from "./pages/Endpage";
 import Home from "./pages/Home";
-import Invoice from "./pages/invoice";
+import Invoice from "./pages/Invoice";
 import Paymentpage from "./pages/Paymentpage";
 import Placeorder from "./pages/Placeorder";
 import Productpage from "./pages/Productpage";
