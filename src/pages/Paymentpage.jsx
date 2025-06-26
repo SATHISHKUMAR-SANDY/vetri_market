@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/styles/payment.css";
+import "../assets/styles/Payment.css";
 import { RiDraftLine } from "react-icons/ri";
 import { useState } from "react";
 import cash from "../assets/images/cash.png";
