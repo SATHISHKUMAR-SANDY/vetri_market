@@ -1,0 +1,218 @@
+.payment-main-container {
+  width: 75%;
+  border: solid 1px black;
+}
+.payment-form-container {
+  width: 50%;
+  /* border: solid 2px red; */
+  margin: 20px auto;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+
+
+.payment-form-container{
+    padding: 19px;
+}
+.date-draft-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.deraft button{
+    border: none;
+    background-color: blue;
+    color: white;
+    padding: 5px 8px;
+
+}
+
+
+
+.cashoption-container{
+    display: flex;
+}
+
+.collect-amount-container{
+    margin-top: 50px;
+}
+.collectAmount{
+background-color: #F88E55;
+border-radius: 5px;
+padding:3px 30px;
+}
+.BlanceAmount{
+background-color: plum;
+border-radius: 5px;
+padding:3px 45px;
+}
+.collect-amount-container{
+    display: flex;
+    gap: 47px;
+}
+span{
+    display: inline-block;
+}
+
+.type-paymets{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+.cash-payment{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.cash-payment button{
+    background-color: transparent;
+    border: #409CFF solid 1px;
+    padding: 5px 40px;
+}
+
+.cash-payment img{
+    background-color: #FFF264;
+    padding: 10px;
+    border-radius: 50%;
+
+}
+.done{
+    position: relative;
+    left: 30px;
+    top: -2px;
+}
+.card-payment{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.card-payment button{
+    background-color: transparent;
+    border: #409CFF solid 1px;
+    padding: 5px 50px;
+}
+
+.card-payment img{
+    background-color: #FFF264;
+    padding: 10px;
+    border-radius: 50%;
+
+}
+
+
+.recevied-amount{
+width: 40%;
+display: flex;
+align-items: center;
+position: relative;
+top: 10px;
+}
+.floating-input {
+    position: relative;
+    /* margin: 20px 0; */
+    width: 250px;
+  }
+  
+  .floating-input input {
+    width: 100%;
+    padding: 20px 0px 26px 10px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .floating-input label {
+    position: absolute;
+    left: 10px;
+    top: 14px;
+    color: #999;
+    background-color: white;
+    padding: 0 4px;
+    transition: 0.2s ease all;
+    pointer-events: none;
+  }
+  
+  /* Move label when focused or filled */
+  .floating-input input:focus + label,
+  .floating-input.filled label {
+    top: -8px;
+    font-size: 12px;
+    color: #007bff;
+  }
+
+
+
+
+.sub-total p,.tax p,.round p,.total p{
+    font-size: 17px;
+    font-weight: 700;
+}
+.sub-total,.tax,.round,.total{
+    margin-top: 10px;
+    display: flex;
+justify-content: space-between;
+
+}
+
+
+
+
+.save-payment{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.save-payment button:first-child{
+    background-color: #F88E55;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+.save-payment button:last-child{
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+
+@media(max-width:576px){
+    .payment-form-container{
+        width: 100%;
+    }
+    .payment-main-container{
+        width: 100%;
+    }
+    .collect-amount-container{
+        flex-wrap: wrap;
+        gap: 17px;
+        justify-content: center;
+    }
+    .cashoption-container{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .type-paymets{
+        width: 100%;
+    }
+    .recevied-amount{
+        width: 90%;
+    }
+}
+
+@media(min-width:768px) and (max-width:992px){
+    .payment-form-container{
+        width: 80%;
+    }
+}

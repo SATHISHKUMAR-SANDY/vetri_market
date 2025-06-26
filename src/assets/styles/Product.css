@@ -1,0 +1,22 @@
+.Products-Main{
+    width: 65%;
+    height: 100vh;
+    margin: 0px auto;
+}
+.Products-page-heading{
+    margin-top:20px ;
+    margin-bottom: 20px;
+}
+.ProductsTabel-mainContainer{
+
+    width: 95%;
+    margin:0px auto 0px auto;
+}
+
+
+.add-cart-icon{
+    background-color: #F88E55;
+    padding: 5px;
+    font-size: 25px;
+    border-radius: 10px;
+}

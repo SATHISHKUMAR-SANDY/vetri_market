@@ -1,0 +1,148 @@
+.head-invoioce {
+  text-align: center;
+  margin-top: 30px;
+}
+/* .invoice-parent {
+  border: solid 3px #f88e55;
+} */
+.main-invoice {
+  width: 90%;
+  margin: 50px auto 0px;
+}
+.about-company {
+  font-size: 20px;
+}
+.about-company-content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.invoice-number {
+  border: solid 1px black;
+  margin-bottom: 10px;
+}
+.invoice-line {
+  height: 2px; /* Line thickness */
+  background-color: #01ff1f; /* Line color */
+  border: none; /* Remove default border */
+  width: 100%; /* Optional: full width */
+  margin: 20px 0; /* Optional: spacing */
+}
+.id-date {
+  width: 40%;
+}
+.about-customer {
+  display: flex;
+  justify-content: space-between;
+}
+.about-customer p{
+font-size: 20px;
+}
+.bill-address {
+  width: 50%;
+}
+
+.custom-tabel-invoice {
+    width: 100%;
+    border-collapse: collapse;
+    border: solid #01ff1f 1px ;
+  }
+  
+  .custom-tabel-invoice th {
+    border: 1px solid #01ff1f;  /* ✅ fixed typo */
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .custom-tabel-invoice td{
+    /* border: 1px solid #01ff1f;  ✅ fixed typo */
+    padding: 20px;
+    text-align: left;
+  }
+
+  .total-amount-invoice{
+    text-align: right;
+    margin-top: 30px;
+  }
+  .total-amount-invoice span{
+    margin-left: 20px;
+  }
+  .invoice-btn{
+    display: flex;
+    position: relative;
+    left: 400px;
+    margin-bottom: 30px;
+  }        
+
+/* Mobile devices (up to 480px) */
+@media (max-width: 480px) {
+    .invoice-parent {
+      padding: 10px;
+    }
+  
+    .main-invoice,
+    .about-company-content,
+    .about-customer,
+    .custom-tabel-invoice,
+    .total-amount-invoice {
+      width: 100%;
+      overflow-x: auto;
+      font-size: 14px;
+    }
+  
+    .about-company-content {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .invoice-number {
+      text-align: left;
+      margin-top: 10px;
+    }
+  
+    .custom-tabel-invoice th,
+    .custom-tabel-invoice td {
+      font-size: 12px;
+      padding: 8px;
+    }
+  
+    .total-amount-invoice {
+      font-size: 16px;
+      text-align: right;
+      padding: 10px 0;
+    }
+  
+    .download-btn {
+      left:30px;
+    }
+  }
+  
+  /* Tablets (481px to 768px) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .invoice-parent {
+      padding: 20px;
+    }
+  
+    .custom-tabel-invoice th,
+    .custom-tabel-invoice td {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .download-btn {
+  left: 200px;
+    }
+  
+    .total-amount-invoice {
+      font-size: 18px;
+    }
+  }
+  
+
+
+
+  .thank-container{
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+  }

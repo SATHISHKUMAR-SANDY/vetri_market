@@ -1,0 +1,283 @@
+.home-container {
+  display: flex;
+}
+
+.sidebar-wrapper {
+  width: 25%;
+  height: 100vh;
+  position: sticky;
+  top: 0px;
+  background-color: #CCE5FF;
+}
+
+.custom-container{
+
+  width: 100%;
+  padding-top: 50px;
+}
+
+@media(max-width:575px){
+  .custom-container{
+      display: flex;
+      flex-direction: column;
+      height: 30vh;
+      width: 100%;
+  }
+  .sidebar-wrapper{
+    height: 55vh;
+    position: static;
+  }
+}
+/* @media(min-width:576px) and (max-width:991px){
+  .custom-container{
+   height: 100vh;
+}
+} */
+
+@media (max-width: 575px) {
+  .home-container {
+    flex-direction: column;
+  }
+  .sidebar-wrapper {
+    width: 100%;
+  }
+}
+
+/*Customer details*/
+.main-content {
+  width: 75%;
+
+  margin: 20px 0px 0px 20px;
+}
+.main-content h1 {
+  text-align: start;
+}
+.C-detail-main {
+  max-width: 60%;
+  padding: 20px 40px;
+  margin-top: 30px;
+}
+.d-first-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.d-second-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Edit-icon {
+  color: #4598ff;
+  border: solid 1px #4598ff;
+  border-radius: 15px;
+  padding: 5px;
+}
+hr {
+  margin: 10px 0px;
+  width: 100%;
+}
+.d-second-row-seecond-colum {
+  position: relative;
+  bottom: 15px;
+}
+
+/* Customer Detail Media Query */
+
+@media (max-width: 575px) {
+  .main-content {
+    width: 100%;
+    margin: 0px auto;
+  }
+  .C-detail-main {
+    max-width: 90%;
+    padding: 20px 0px;
+    margin-top: 30px;
+  }
+  .d-first-row {
+    flex-direction: column;
+  }
+  .d-second-row {
+    flex-direction: column;
+  }
+  hr {
+    margin: 10px 0px;
+    width: 100%;
+  }
+  .d-second-row-seecond-colum {
+    position: relative;
+    right: 27px;
+  }
+}
+
+
+
+/* Products and Search Box */
+
+.Products-main {
+  width: 80%;
+}
+.searchbox-MainContainer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
+}
+.Search-Box {
+
+  outline: none;
+  border: solid 1px white;
+  border-radius: 0px 0px 5px 5px;
+  width: 100%;
+  padding: 12px 120px 12px 50px;
+  border-top: none;
+ 
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.search-box-row{
+  position: relative;
+  width: 70%;
+}
+.search-icon{
+position: absolute;
+top: 14px;
+left: 25px;
+font-size: 20px;
+}.barcode-icon{
+  position: absolute;
+  right:90px;
+  top: 14px;
+  font-size: 20px;
+  z-index: 1000;
+}
+.mic-icon{
+  position: absolute;
+  color: #4598ff;
+  right:40px;
+  top: 14px;
+  font-size: 20px;
+}
+
+
+
+
+.button-container {
+  width: 28%;
+}
+.button-container button{
+width: 80%;
+padding: 8px 0px;
+background-color: rgb(248,142,85);
+border: none;
+border-radius: 4px;
+text-align: center;
+font-size: 20px;
+font-weight: 500;
+}
+.Add-icon{
+  color: white;
+  font-size: 25px;
+  margin-right: 4px;
+}
+
+@media(max-width:576px){
+  .search-box-row{
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  .button-container{
+    width: 100%;
+
+  }
+  .button-container button{
+    width: 70%;
+    margin: 16px 0px 0px 36px;
+
+  }
+  
+}
+@media(min-width:577px) and (max-width:768px){
+
+.Products-main{
+width: 100%;
+}
+}
+
+
+
+ /* Products */
+ .cart-items-container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Makes table scrollable on smaller screens */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Table Styling */
+.cart-tabel table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  min-width: 600px; /* Enable horizontal scroll if screen is small */
+  border: 1px solid #000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Header Styling */
+.cart-tabel th {
+  font-size: 16px;
+  font-weight: 600;
+  color: blue;
+  padding: 12px 20px;
+  text-align: left;
+  border: 1px solid #000;
+}
+
+/* Data Cell Styling */
+.cart-tabel td {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 12px 20px;
+  text-align: left;
+  border: 1px solid #000;
+  vertical-align: middle;
+}
+
+.cart-button{
+  background-color: #556AF8;
+  border: none;
+  width: 10%;
+  padding: 7px 0px;
+  color: white;
+  border-radius: 5px;
+  /* position: relative;
+  top: 20px;
+  left: 300px; */
+  margin: 20px 0px 0px 300px;
+}
+@media(max-width:576px){
+  .cart-button{
+    width: 41%;
+    padding: 8px 0px;
+    margin:10px 90px;
+    
+  }
+
+  @media(min-width:577px) and (max-width:991px){
+    .cart-button{
+      margin-left: 214px;
+      width:15%;
+    }
+  }
+}

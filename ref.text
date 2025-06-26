@@ -1,0 +1,7 @@
+const refreshCustomer = () => {
+    const updated = localStorage.getItem("customer");
+    if (updated) {
+      setcustomerD(JSON.parse(updated));
+    }
+  
+  };
